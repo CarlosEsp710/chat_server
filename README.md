@@ -37,4 +37,4 @@ A simple chat server built with Node.js and Socket.io.
 ## Docker Usage
 
 1. Build the Docker image: `docker build -t chat-server .`
-2. Run the Docker container: `docker run --name DockerChat -e DB_CONNECTION="mongo URI" -e PORT=3000 -p x000:PORT chat-server`
+2. Run the Docker container: `docker run --name DockerChat -e DB_CONNECTION="mongo URI" -e PORT=3000 -p 3000:3000 chat-server`
