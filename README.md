@@ -8,6 +8,7 @@ A simple chat server built with Node.js and Socket.io.
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [API](#api)
+- [Docker Usage](#docker-usage)
 
 ## Installation
 
@@ -32,3 +33,8 @@ A simple chat server built with Node.js and Socket.io.
   - [GET] `/getTotalUsers`
 - `/api/messages`
   - [GET] `/getAllMessages`
+
+## Docker Usage
+
+1. Build the Docker image: `docker build -t chat-server .`
+2. Run the Docker container: `docker run --name DockerChat -e DB_CONNECTION="mongo URI" -e PORT=3000 -p x000:PORT chat-server`

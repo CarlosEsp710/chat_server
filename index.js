@@ -29,8 +29,8 @@ app.use(express.static(publicPath));
 app.use("/api/users", require("./api/routes/users"));
 app.use("/api/messages", require("./api/routes/messages"));
 
-server.listen(3000, '0.0.0.0', (err) => {
+server.listen(process.env.PORT, '0.0.0.0', (err) => {
     if (err) throw new Error(err);
 
-    console.log("Servidor corriendo en puerto", 3000);
+    console.log("Servidor corriendo en puerto", process.env.PORT);
 });
